@@ -1,13 +1,13 @@
 * {
     padding: 0;
     margin: 0;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#main-title {
+.upper-bar {
     width: 100%;
     height: 5rem;
-    background-color: rgb(43, 43, 43);
+    background-color: rgb(31, 31, 31);
     text-align: left;
     line-height: 5rem;
     font-size: 1.5rem;
@@ -75,4 +75,56 @@
 .serie:hover {
     transform: scale(1.1);
     cursor: pointer;
+}
+
+.serie-container {
+    width: 100%;
+    height: 30vh;
+    position: relative;
+}
+
+.serie-container img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    -webkit-filter:  brightness(40%);
+    -moz-filter: brightness(40%);
+}
+
+.serie-container h1 {
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 1.5rem 2rem;
+    font-size: 3rem;
+}
+
+.serie-data {
+    color: black;
+    height: 100%;
+    width: 100%;
+    padding: 1.5rem 2rem;
+    display: inline-block;
+}
+
+.serie-data h2 {
+    padding-bottom: 1rem;
+}
+
+.serie-data table {
+    table-layout: fixed;
+}
+
+.serie-data th {
+    text-align: left;
+    vertical-align: top;
+    width: 5rem;
+    padding-bottom: .8rem;
+}
+
+.serie-data td {
+    display: inline-block;
+    margin: 0 .5rem;
+    padding-bottom: .8rem;
 }
